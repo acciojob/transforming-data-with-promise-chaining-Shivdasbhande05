@@ -22,7 +22,7 @@ function result () {
                 let multiply = 2 * input;
                 output.textContent = `Result: ${multiply}`
                 resolve(multiply);
-            },1000);
+            },2000);
         }).then ((multiply) => {
             return new Promise((resolve) => {
                 setTimeout(()=>{
