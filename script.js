@@ -17,7 +17,7 @@ function result () {
                 let multiply = 2 * input;
                 output.textContent = `Result: ${multiply}`
                 resolve(multiply);
-            },2000);
+            },1000);
         }).then ((multiply) => {
             return new Promise((resolve) => {
                 setTimeout(()=>{
