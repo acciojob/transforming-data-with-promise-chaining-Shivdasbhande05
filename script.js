@@ -6,7 +6,7 @@ const btn = document.getElementById("btn");
 function result () {
     const input = document.getElementById("ip").value;
 
-    new Promise((resolve) => {
+    return new Promise((resolve) => {
         setTimeout(() => {
             output.textContent = `Result: ${input}`
             resolve(input);
@@ -17,7 +17,7 @@ function result () {
                 let multiply = 2 * input;
                 output.textContent = `Result: ${multiply}`
                 resolve(multiply);
-            },2000);
+            },1000);
         }).then ((multiply) => {
             return new Promise((resolve) => {
                 setTimeout(()=>{
