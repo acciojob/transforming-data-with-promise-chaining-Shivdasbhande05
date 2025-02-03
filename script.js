@@ -15,7 +15,7 @@ function result () {
         return new Promise((resolve) => {
             setTimeout(() => {
                 let multiply = 2 * input;
-                output.textContent = `Result : ${multiply}`
+                output.textContent = `Result: ${multiply}`
                 resolve(multiply);
             },2000);
         }).then ((multiply) => {
@@ -29,19 +29,19 @@ function result () {
                 return new Promise((resolve) => {
                     setTimeout(() => {
                         let divide = subtract /2;
-                        output.textContent = `Result : ${divide}`
+                        output.textContent = `Result: ${divide}`
                         resolve(divide);
                     },1000);
                 }).then((divide) =>{
                     return new Promise((resolve, reject) => {
                         setTimeout(() =>{
                             let add = divide + 10;
-                            output.textContent = `Result : ${add}`;
+                            output.textContent = `Result: ${add}`;
                             resolve(add);
                         },1000)
                     });
                 }).then((add) => {
-                    output.textContent = `Final Result : ${add}`;
+                    output.textContent = `Final Result: ${add}`;
                 })
             })
         })
