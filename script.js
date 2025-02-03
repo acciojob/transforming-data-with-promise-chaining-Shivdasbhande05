@@ -22,7 +22,7 @@ function result () {
             return new Promise((resolve) => {
                 setTimeout(()=>{
                     let subtract = multiply - 3;
-                    output.textContent = `Result : ${subtract}`
+                    output.textContent = `Result: ${subtract}`
                     resolve(subtract);
                 },1000);
             }).then((subtract) =>{
