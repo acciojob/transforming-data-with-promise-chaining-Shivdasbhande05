@@ -8,14 +8,9 @@ function result () {
 
    return new Promise((resolve) => {
         setTimeout(() => {
-            output.textContent = `Result : ${input}`
+            output.textContent = `Result: ${input}`
             resolve(input);
         },2000);
-    }).then((input) => {
-        output.textContent = `Result : ${input}`
-
-        return input;
-        
     }).then((input) => {
         return new Promise((resolve) => {
             setTimeout(() => {
