@@ -6,7 +6,7 @@ const btn = document.getElementById("btn");
 function result () {
     const input = document.getElementById("ip").value;
 
-   return new Promise((resolve) => {
+    new Promise((resolve) => {
         setTimeout(() => {
             output.textContent = `Result: ${input}`
             resolve(input);
